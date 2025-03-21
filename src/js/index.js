@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const menu1 = document.querySelector('.menu1');
     const menu2 = document.querySelector('.menu2');
     const menu3 = document.querySelector('.menu3');
-    const menu4 = document.querySelector('.menu4')
+    const menu4 = document.querySelector('.menu4');
 
     const horizontalOne = document.querySelector('.horizental-one');
     const horizontalTwo = document.querySelector('.horizental-two');
@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const headingCandle = document.querySelector('.the-candle-holder');
     const glass = document.querySelector('.the-glass');
     const lamp = document.querySelector('.the-lamp');
-
 
     // Initially hide horizontalTwo and candle heading
     horizontalTwo.style.display = 'none';
@@ -47,8 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
         headingCandle.style.display = 'block';
         lamp.style.display = 'none';
         fourthHorizental.style.display = 'none';
-
     });
+
     menu3.addEventListener('click', (event) => {
         event.preventDefault(); // Prevent the default link behavior
 
@@ -61,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
         glass.style.display = 'block';
         lamp.style.display = 'none';
         fourthHorizental.style.display = 'none';
-
     });
 
     menu4.addEventListener('click', (event) => {
@@ -75,4 +73,29 @@ document.addEventListener('DOMContentLoaded', () => {
         fourthHorizental.style.display = 'flex';
         lamp.style.display = 'block';
     });
+
+    const collectionOne = document.querySelector('.collection-one');
+    const collectionTwo = document.querySelector('.collection-two');
+
+    function isElementInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.bottom >= 0
+        );
+    }
+
+    function handleScroll() {
+        if (isElementInViewport(collectionOne) && !collectionOne.classList.contains('slide-up-animation')) {
+            collectionOne.style.display = 'flex'; // Make it visible
+            collectionOne.classList.add('slide-up-animation');
+        }
+
+        if (isElementInViewport(collectionTwo) && !collectionTwo.classList.contains('slide-up-animation')) {
+            collectionTwo.style.display = 'flex'; // Make it visible
+            collectionTwo.classList.add('slide-up-animation');
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
 });

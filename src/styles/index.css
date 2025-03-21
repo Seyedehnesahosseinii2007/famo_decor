@@ -14,7 +14,7 @@ header {
     height: 80px;
     background-color: #D3DADC;
     display: flex;
-    position: fixed;
+    position: sticky;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 2px 8px #bfc3c4;
@@ -269,7 +269,7 @@ header {
 /* the animation for slide up */
 @keyframes slideUp {
     from {
-        transform: translateY(300%);
+        transform: translateX(300%);
         opacity: 0%;
     }
 
@@ -315,6 +315,7 @@ header {
     display: none;
     animation: slideUp 0.5s;
 }
+
 /* end the fourth horizental scroll */
 .product-card {
     font-family: "Beiruti",
@@ -473,3 +474,121 @@ header {
 }
 
 /* end the product meenu  */
+.just-collection {
+    margin-top: 70px;
+    font-family: 'Marhey', sans-serif;
+    text-align: center;
+    font-size: 25pt;
+    border-bottom: 2px solid #333333;
+    width: 250px;
+}
+
+.jst-clc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* start collection one  */
+/* Existing styles for .collection-one */
+/* Existing styles for .collection-one */
+.collection-one {
+    display: none;
+    /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 100px;
+    text-align: right;
+    gap: 70px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Existing styles for .collection-one-text */
+.collection-one-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: black solid 2px;
+    margin-top: 50px;
+    text-align: right;
+    direction: rtl;
+    width: 50%;
+    height: auto;    padding: 3rem;
+    font-family: "Beiruti", sans-serif;
+    font-weight: 500;
+    font-size: 17pt;
+    direction: rtl;
+}
+
+#pic-clc-one {
+    width: 25%;
+}
+
+/* end collection one  */
+.collection-two {
+    display: none;
+    /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 50px;
+    text-align: right;
+    gap: 70px;
+    width: 100%;
+    height: auto;
+}
+
+.slide-up-animation {
+    animation: slideUp 2s;
+}
+
+
+.collection-two-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border: black solid 2px;
+    margin-top: 50px;
+    text-align: right;
+    direction: rtl;
+    width: 50%;
+    height: auto;
+    padding: 3rem;
+    font-family: "Beiruti", sans-serif;
+    font-weight: 500;
+    font-size: 17pt;
+    direction: rtl;
+}
+
+#pic-clc-two {
+    width: 25%;
+}
+
+#heading {
+    font-size: 20pt;
+}
+
+/* the last banner */
+.banner-fix {
+    margin-top: 70px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/banner/home.png");
+    min-height: 500px;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    margin-top: 30px;
+    background-color: #455763;
+}
