@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #455763;
+    overflow-x: hidden;
+    /* prevent horizontal scroll */
+    direction: rtl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h2 {
+    font-family: "Beiruti", sans-serif;
+    font-weight: 700;
+    font-size: 35pt;
+
+}
+
+.wrapper {
+    width: 500px;
+    height: 670px;
+    border: 2px solid rgb(138, 138, 138);
+    background-color: rgba(255, 255, 255, 0.2);
+    /* شفافیت */
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 40% 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper .inputbox {
+    width: 100%;
+    height: 45px;
+    margin: 5px 0;
+    position: relative;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 100%;
+    border: #d6c9b4 1px solid;
+    outline: #d6c9b4 solid;
+    border-radius: 50px;
+    padding-right: 30px;
+}
+
+.inputbox input::placeholder {
+    color: rgb(138, 138, 138);
+    direction: rtl;
+    text-align: right;
+    font-family: 'Marhey', sans-serif;
+
+    padding: 20px;
+}
+
+span, u {
+    font-family: 'Marhey', sans-serif;
+}
+
+.inputbox input:focus::placeholder {
+    color: transparent;
+}
+
+.inputbox input:focus {
+    padding-right: 30px;
+    /* مقدار دلخواه */
+}
+
+.inputbox i {
+    position: absolute;
+    left: 15px;
+    transform: translateY(27%);
+    font-size: 20px;
+}
+
+form {
+    width: 70%;
+    height: auto;
+    gap: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#submit {
+    display: block;
+    margin: 0 auto; }

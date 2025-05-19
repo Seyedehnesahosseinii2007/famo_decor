@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit and Save Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h2>Editable Input with Edit and Save Button</h2>
+        <input type="text" id="editableInput" value="This is some editable text." disabled />
+        <br />
+        <button id="editBtn">Edit</button>
+    </div>
+
+    <script>
+        const editButton = document.getElementById('editBtn');
+        const inputField = document.getElementById('editableInput');
+
+        editButton.addEventListener('click', () => {
+            if (inputField.disabled) {
+                inputField.disabled = false;
+                inputField.focus();
+                editButton.textContent = 'Save';
+            } else {
+                inputField.disabled = true;
+                editButton.textContent = 'Edit';
+                alert('متن شما ذخیره شد: ' + inputField.value);
+            }
+        });
+    </script>
+</body>
+
+</html>
