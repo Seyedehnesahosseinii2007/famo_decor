@@ -28,7 +28,7 @@ h2 {
 
 .wrapper {
     width: 500px;
-    height: 670px;
+    height: 500px;
     box-shadow: 1px 1px 10px 1px #E8E2DA;
     border: 2px solid rgb(138, 138, 138);
     background-color: rgba(255, 255, 255, 0.2);
@@ -70,7 +70,8 @@ h2 {
 span,
 u {
     font-family: 'Marhey', sans-serif;
-    font-size: 13pt;
+    font-size: 14pt;
+    cursor: pointer;
 }
 
 .inputbox input:focus::placeholder {
@@ -106,4 +107,40 @@ form {
     box-shadow: 1px 1px 10px 1px #E8E2DA;
     cursor: pointer;
     transition: 0.5s;
+}
+
+.remember input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #b0b0b0;
+    border-radius: 5px;
+    background: #f3f3f3;
+    cursor: pointer;
+    position: relative;
+
+
+}
+
+label {
+    font-family: "Beiruti", sans-serif;
+    font-weight: 700;
+    font-size: 15pt;
+}
+
+.remember input[type="checkbox"]:checked {
+    background: #24344d;
+    border-color: #24344d;
+}
+
+.remember input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 6px;
+    width: 6px;
+    height: 12px;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(45deg);
 }

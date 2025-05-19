@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ثبت نام</title>
+    <title> ورود</title>
     <link rel="stylesheet" href="../dist/output.css">
     <!-- link to the css -->
-    <link rel="stylesheet" href="../src/styles/sign up.css">
+    <link rel="stylesheet" href="../src/styles/log in.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,51 +27,37 @@
 </head>
 
 <body>
-    <!-- start the form -->
     <div class="wrapper">
-        <h2>ثبت نام</h2>
-        <!-- famo decor logo  -->
-        <img class="w-24" src="images/fargol.png" alt="logo">
+        <h2>ورود</h2>
         <form action="#">
-            <!-- input for fullname -->
-            <div class="inputbox">
-                <input type="text" placeholder="نام و نام خانوادگی خود را وارد کنید" required>
-                <i class="bi bi-person-fill"></i>
-            </div>
-            <!-- input for email -->
-            <div class="inputbox">
-                <input type="email" name="email" id="email" placeholder="example@gmail.com"
-                    pattern="^[a-z0-9]+@[a-z]{1,5}\.com$">
-                <i class="bi bi-envelope-at-fill"></i>
-            </div>
-            <!-- input for phonenumber -->
+
+
             <div class="inputbox">
                 <input type="tel" name="phonenumber" id="phonenumber" placeholder="شماره تلفن خود را وارد کنید"
                     required>
                 <i class="bi bi-telephone-fill"></i>
             </div>
-            <!-- input for password -->
+
             <div class="inputbox">
                 <input type="password" name="password" id="password" placeholder="رمز عبور خود را وارد کنید">
                 <i class="bi bi-lock-fill"></i>
             </div>
-            <!-- input for address -->
-            <div class="inputbox">
-                <input type="text" name="address" id="address" placeholder="آدرس خود را وارد کنید">
-                <i class="bi bi-geo-alt-fill"></i>
-            </div>
-            <!-- button submit and register  -->
+
+
             <button id="submit"
                 class="w-52 h-10 text-center rounded-md bg-[#d6c9b4] flex justify-center items-center mx-auto transition-all duration-300 ease-in-out hover:w-[13.5rem] hover:h-11 hover:-translate-y-1 hover:shadow-xl"
                 type="submit">
-                ثبت نام
-            </button> <a href="../src/log in.html" class="w-full h-9 gap-3 flex justify-center" href="#"><u
-                    id="already">قبلا حساب کاربری
-                    داشته‌اید؟ </u><span id="log">ورود</span></a>
+                ورود
+            </button>
+            <div class="remember">
+                <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">مرا به خاطر
+                    بسپار</label>
+
+            </div>
+            <a href="../src/sign up.html" class="w-full h-9 gap-3 flex justify-center" href="#"><u id="already">
+                    اگر حساب کاربری ندارید ثبت نام کنید</u><span id="log">ثبت نام</span></a>
         </form>
     </div>
-    <!-- end the form -->
-
 </body>
 
 </html>
