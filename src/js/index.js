@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 document.addEventListener('DOMContentLoaded', function () {
     // آرایه تایتل‌ها و بخش‌های محصولات به ترتیب
     const headings = [
@@ -77,6 +78,8 @@ document.onclick = (event) => {
 <<<<<<< HEAD
 >>>>>>> parent of fcc8c6c (product detail)
 =======
+=======
+>>>>>>> parent of 1524d5e (hello)
 document.addEventListener('DOMContentLoaded', function () {
     // آرایه عنوان‌ها و بخش‌ها به ترتیب
     var headings = [
