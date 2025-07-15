@@ -77,12 +77,15 @@ document.onclick = (event) => {
     }
 };
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> parent of fcc8c6c (product detail)
 =======
 =======
 >>>>>>> parent of 1524d5e (hello)
 =======
 >>>>>>> parent of 1524d5e (hello)
+=======
+>>>>>>> parent of 1560bf8 (Revert "product detail")
 document.addEventListener('DOMContentLoaded', function () {
     // آرایه عنوان‌ها و بخش‌ها به ترتیب
     var headings = [
@@ -145,4 +148,7 @@ document.addEventListener('DOMContentLoaded', function () {
         showSection(3);
     });
 });
+<<<<<<< HEAD
+>>>>>>> parent of 1560bf8 (Revert "product detail")
+=======
 >>>>>>> parent of 1560bf8 (Revert "product detail")
