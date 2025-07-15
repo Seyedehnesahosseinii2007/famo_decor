@@ -615,6 +615,7 @@ footer {
 /* end footer  */
 .slide-up-animation {
     animation: slideUp 0.5s ease forwards;
+<<<<<<< HEAD
 }
 
 /* start humburger menu */
@@ -1104,3 +1105,6 @@ footer {
 }
 
 /* end responsive */
+=======
+}
+>>>>>>> parent of 12209a6 (finished responsive hum menu)
